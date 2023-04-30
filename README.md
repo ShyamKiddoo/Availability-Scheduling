@@ -1,4 +1,4 @@
- Django registration and availability scheduling.
+Nbyula registration and availability scheduling.
 This web app has been developed using the popular Django framework and Bootstrap for the frontend. My motivation to build this project is so that I can learn about Django and tighten up my skills. This mini-app can be easily integrated into a bigger system project that needs to have all the functionalities.
 
 ### Basic Features of The App
@@ -26,4 +26,6 @@ $ python manage.py runserver
 ```
    
 3. Open a browser and go to http://localhost:8000/
+
+I have added the Output screenshots in the Media folder for your reference
 

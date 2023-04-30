@@ -1,0 +1,22 @@
+{% extends "users/base.html" %}
+{% block title %} Home Page {% endblock title%}
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome Terraformer!</h1>
+        <p class="lead">
+            This is <b>Nbyula Appointment Management System. </b> Here the Terraformers can login and schedule an appointment with any other
+            terraformer on this platform. The admin can track the availabilty of the Terraformers. <br> The terraformers can also update the profile name and password from the profile page.
+            
+        </p>
+        <hr class="my-4">
+        <p class="lead">
+            {% if user.is_authenticated %}
+                <a class="btn btn-primary btn-lg" href="{% url 'logout' %}" role="button">Logout</a>
+            {% else %}
+                <a class="btn btn-primary btn-lg" href="{% url 'login' %}" role="button">Sign in</a>
+            {% endif %}
+            <center><img src="https://i.vimeocdn.com/video/1295289392-a5d30647815f5204c89f7c9e93ffd7c5a1108c5e7eca63606_640"></center>
+        </p>
+    </div>
+    
+{% endblock content %}
